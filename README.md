@@ -232,5 +232,5 @@ distribuída, não a de armazenamento.
 ## Autores
 - Erik Barbosa de Castro
 - Douglas Rezende Chagas
-- Lucas Silva Maués
+- Lucas Maues
 - Diego Hatori Dallaqua
