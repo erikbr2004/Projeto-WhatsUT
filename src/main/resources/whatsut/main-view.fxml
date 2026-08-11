@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="whatsut.controllers.MainController">
+
+    <left>
+        <VBox spacing="10" prefWidth="250" styleClass="sidebar">
+            <Label text="WhatsUT" styleClass="sidebar-title"/>
+
+            <TextField fx:id="searchField" promptText="Pesquisar ou começar nova conversa" />
+
+            <Label text="Contatos:" style="-fx-font-weight: bold; -fx-text-fill: white;" />
+            <ListView fx:id="contactList" VBox.vgrow="ALWAYS" />
+
+            <HBox fx:id="leftButtonBar" spacing="10" alignment="CENTER">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Criar Grupo" onAction="#handleCreateGroupClick"/>
+            </HBox>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox fx:id="chatArea" spacing="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label fx:id="chatTitle" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+                <Button fx:id="botaoIntegrantes" text="Integrantes" onAction="#handleMostrarIntegrantes" visible="false" />
+                <Button fx:id="botaoSairGrupo" text="Sair do grupo" onAction="#handleSairDoGrupo" visible="false" />
+                <Button fx:id="botaoBanir" text="Banir integrante" onAction="#handleBanirIntegrante" visible="false" />
+            </HBox>
+
+
+            <TextArea fx:id="chatHistory" prefHeight="400" editable="false" />
+
+            <HBox spacing="10">
+                <TextField fx:id="inputMensagem" promptText="Digite sua mensagem..." HBox.hgrow="ALWAYS" />
+                <Button fx:id="botaoArquivo" text="Arquivo" onAction="#handleEscolherArquivo" />
+                <Button fx:id="botaoEnviar" text="Enviar" onAction="#handleEnviarMensagem" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

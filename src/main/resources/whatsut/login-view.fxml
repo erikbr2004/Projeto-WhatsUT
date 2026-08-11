@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="whatsut.controllers.LoginController"
+           styleClass="root">
+
+  <VBox alignment="CENTER" spacing="20" styleClass="login-box">
+
+    <!-- Título centralizado no topo -->
+    <Label text="WhatsUT" styleClass="login-title"/>
+
+    <!-- Campos de login -->
+    <TextField fx:id="userField" promptText="Usuário" />
+    <PasswordField fx:id="passwordField" promptText="Senha" />
+    <Button text="Login" onAction="#onLoginClick"/>
+    <Label fx:id="erroLabel" />
+
+  </VBox>
+</StackPane>

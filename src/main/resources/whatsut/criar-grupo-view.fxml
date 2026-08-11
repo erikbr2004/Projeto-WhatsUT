@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="whatsut.controllers.CriarGrupoController"
+      spacing="10" alignment="TOP_LEFT">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Criar Novo Grupo" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="nomeGrupoField" promptText="Nome do Grupo" />
+
+    <Label text="Selecione os usuários para adicionar:" />
+    <ScrollPane prefHeight="200">
+        <content>
+            <VBox fx:id="vboxUsuarios" spacing="5" />
+        </content>
+    </ScrollPane>
+
+
+    <Label text="Modo ao sair do grupo:" />
+    <HBox spacing="10">
+        <RadioButton fx:id="radioTransferir" text="Transferir administração" toggleGroup="$modoSaidaGroup" />
+        <RadioButton fx:id="radioDeletar" text="Deletar grupo" toggleGroup="$modoSaidaGroup" />
+    </HBox>
+
+    <Button text="Criar Grupo" onAction="#handleCriarGrupo" />
+</VBox>

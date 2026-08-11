@@ -1,0 +1,43 @@
+.root {
+    -fx-background-color: #547ca1; /* azul de fundo */
+    -fx-padding: 30;
+}
+
+.login-box {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+    -fx-min-width: 300px;
+}
+
+.login-button {
+    -fx-background-color: #0c0c0c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 10;
+}
+
+.login-box {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+    -fx-max-width: 350px; /* <<< AQUI está a limitação de largura */
+    -fx-pref-width: 80%;   /* Responsivo sem esticar demais */
+}
+
+.login-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a2a2a;
+}
+
+
+.link {
+    -fx-text-fill: #eeeeee;
+    -fx-font-size: 10pt;
+}

@@ -1,0 +1,14 @@
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+.sidebar {
+    -fx-background-color: #0c1f2c;
+    -fx-padding: 15;
+}
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
