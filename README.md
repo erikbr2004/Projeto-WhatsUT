@@ -230,6 +230,7 @@ distribuída, não a de armazenamento.
 ---
 
 ## Autores
-
-- Pedro de Oliveira Pinto
 - Erik Barbosa de Castro
+- Douglas Rezende Chagas
+- Lucas Silva Maués
+- Diego Hatori Dallaqua
